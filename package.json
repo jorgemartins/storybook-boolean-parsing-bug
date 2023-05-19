@@ -11,21 +11,22 @@
   },
   "devDependencies": {
     "@babel/core": "^7.18.9",
-    "@storybook/addon-actions": "^6.5.9",
-    "@storybook/addon-essentials": "^6.5.9",
-    "@storybook/addon-interactions": "^6.5.9",
-    "@storybook/addon-links": "^6.5.9",
-    "@storybook/builder-webpack4": "^6.5.9",
-    "@storybook/manager-webpack4": "^6.5.9",
-    "@storybook/react": "^6.5.9",
-    "@storybook/testing-library": "^0.0.13",
+    "@babel/preset-env": "^7.21.5",
+    "@storybook/addon-actions": "^7.0.12",
+    "@storybook/addon-essentials": "^7.0.12",
+    "@storybook/addon-interactions": "^7.0.12",
+    "@storybook/addon-links": "^7.0.12",
+    "@storybook/react": "^7.0.12",
+    "@storybook/react-webpack5": "^7.0.12",
+    "@storybook/testing-library": "^0.1.0",
     "babel-loader": "^8.2.5",
     "parcel": "^2.6.2",
-    "process": "^0.11.10"
+    "process": "^0.11.10",
+    "storybook": "^7.0.12"
   },
   "scripts": {
     "dev": "yarn parcel src/index.html",
-    "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   }
 }
